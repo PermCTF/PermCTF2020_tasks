@@ -1,1 +1,1 @@
-PermCTF{h1dden_pepe_cl0w}
+PermCTF{h1dden_pepe_cl0wn}

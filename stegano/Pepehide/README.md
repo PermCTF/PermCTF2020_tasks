@@ -10,5 +10,5 @@
 4. Steghide достаем файл с флагом, при этом достать файл получиться только  ключом задекоденным в base64
 
 ## Флаг:
-    PermCTF{h1dden_pepe_cl0w}
+    PermCTF{h1dden_pepe_cl0wn}
 
