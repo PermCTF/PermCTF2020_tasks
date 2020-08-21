@@ -1,0 +1,2 @@
+pyTelegramBotAPI==3.6.6
+python-gnupg==0.4.6
