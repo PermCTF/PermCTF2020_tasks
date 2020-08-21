@@ -1,0 +1,2 @@
+exiftool -> comment='c3RlZ2hpZGVrZXk=' = steghidekey -> steghide with key 'steghidekey' and open flag.txt
+
