@@ -1,6 +1,6 @@
 import telebot, logging, gnupg
 from config import TG_TOKEN
-from GnuPermGuard import encrypt_flag
+from GorodPermGuard import encrypt_flag
 
 bot = telebot.TeleBot(TG_TOKEN)
 telebot.logger.setLevel(logging.DEBUG)
