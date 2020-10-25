@@ -15,13 +15,20 @@
 ├── категориятаска2/
 .
 .  
+
+Структура файла README.md
+# Название
+## Описание:
+Lorem ipsum
+
+## Решение:
+1. Первое
+2. Второе
+5. Пятое
+10. Десяток
+
+## Флаг
+PermCTF{example_flag}
 ```
-
-Стуктура README.MD:
-
-* Название
-* Описание 
-* Решение (кратко)
-* Флаг
 
 [Пример](https://github.com/PermCTF/PermCTF2019_tasks/tree/master/forensics/transfer_protocol) 
