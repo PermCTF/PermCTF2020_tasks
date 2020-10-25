@@ -4,11 +4,11 @@
 Найди его и его сообщников
 
 ## Решение:
-Задача заключается в поиске открытого ключа по почте.
-Заходим на сервер ключей keyserver.ubuntu.com и вводим почту.
-Видим, что ключ подписан другим ключом.
-Кликаем на отпечаток 201306d6de9e4d66 и видим флаг
-http://keyserver.ubuntu.com/pks/lookup?search=nosowoh594%40ptcji.com&fingerprint=on&op=index
+1. Задача заключается в поиске открытого ключа по почте.
+2. Заходим на сервер ключей keyserver.ubuntu.com и вводим почту.
+3. Видим, что ключ подписан другим ключом.
+4. Кликаем на отпечаток 201306d6de9e4d66 и видим флаг
+5. http://keyserver.ubuntu.com/pks/lookup?search=nosowoh594%40ptcji.com&fingerprint=on&op=index
 
 ## Флаг 
 PermCTF{crystal_view_security
