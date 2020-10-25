@@ -1,6 +1,13 @@
 # PermCTF2020_tasks
 
- This repository contains all tasks from PermCTF2k20 
+Репозитор с тасками PermCTF 2020
+
+Структура репозитория
+/
+/категориятаска/
+/категориятаска/названиетаска
+/категориятаска/названиетаска/файлытаска+файл README.md
+
 
 Стуктура README.MD:
 
