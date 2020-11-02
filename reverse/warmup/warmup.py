@@ -290,7 +290,7 @@ else:
 
     try:
         if(int(sys.argv[1]) == 0xdeadbeef):
-            print("pumr4w_ftcmrep"[::-1])
+            print('}em_elipmocnu{FTCmreP'[::-1])
     except:
         pass
     try:

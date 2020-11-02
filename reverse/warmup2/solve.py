@@ -13,7 +13,7 @@ while(True):
     b = f1.read(1)
     if not b:
         break
-    if int.from_bytes(b,byteorder='big') == 255:
+    if int.from_bytes(b,byteorder='big') == 0:
         length = f1.read(1)
         encrypted_bytes = f1.read(int.from_bytes(length,byteorder='big'))
         decrypted_bytes = bytearray()

@@ -5,15 +5,13 @@ COPY ./chall /chall
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timez
 RUN apt-get update
-RUN apt-get install -y build-essential ncat
-RUN chmod 777 -R /chall
+RUN apt-get install -y  ncat
+RUN chmod +x /chall/chall
+RUN chmod +r /chall/flag*
 RUN adduser noob
-RUN cd chall && gcc -o chall main.c
-RUN cd chall && rm main.c
 RUN cd chall && mv flag2 /etc/flag
 
 WORKDIR /chall
 USER noob
 
-#CMD ./ynetd  -p "0.0.0.0:4241 localhost:4241" ./chall
-CMD ncat -k -l -p 4241 -c "./chall"
+CMD ncat -k -l -p 4240 -c "./chall"
