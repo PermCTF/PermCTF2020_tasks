@@ -9,11 +9,14 @@ COPY ./chall /chall
 RUN apt-get update && apt-get install -y openssh-server net-tools
 RUN mkdir /var/run/sshd
 RUN echo 'root:!Supe4sec3re!' | chpasswd
-RUN useradd -p Am1sTrAng@r stranger
+RUN useradd -ms /bin/bash stranger
+RUN echo "Go to /chall directory and pwn this box. You can use python + pwntools to write exploit." > /home/stranger/README.txt
+RUN echo 'stranger:Am1sTrAng@r' | chpasswd
 RUN sed -i 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' /etc/pam.d/sshd
 ENV NOTVISIBLE="in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
-
+RUN /usr/bin/ssh-keygen -A
+RUN service ssh start
 
 #test
 RUN netstat -tulpn
@@ -27,6 +30,8 @@ RUN pip install pwntools
 # configuring access  
 RUN chown root:root /chall/flag
 RUN chown root:root /chall/stupid-rope
+RUN chown root:root /chall/main.c
+RUN chmod -R 400 /chall/main.c /chall/flag
 RUN chown stranger:stranger /chall/makefile
 RUN chmod +s /chall/stupid-rope
 
