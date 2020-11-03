@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  elka:
+    build: .
+    container_name: elka_container
+    environment:
+      - node.name=elo4ka
+      - cluster.name=elo4ka-cluster
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+    ports:
+      - 127.0.0.1:9200:9200
