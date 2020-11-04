@@ -3,7 +3,7 @@
 
 # Файлы
 * chall                         # папка с файлами для таска;
-* Dockerfile & docker-compose   # Docker stuff;
+* Dockerfile & build.sh         # Docker stuff;
 * solve.py                      # скрипт-эксплойт;
 
 Папка chall:
