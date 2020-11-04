@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get install -y  ncat
 RUN chmod +x /chall/chall
 RUN chmod +r /chall/flag*
-RUN adduser noob
+RUN useradd -ms /bin/bash noob
 RUN cd chall && mv flag2 /etc/flag
 
 WORKDIR /chall

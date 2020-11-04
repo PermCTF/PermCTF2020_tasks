@@ -1,0 +1,22 @@
+version: '3'
+services:
+  warmup:
+    build: warmup/
+    ports:
+      - "4240:4240"
+    restart: always
+  warmup2:
+    build: warmup2/
+    ports:
+      - "4241:4241"
+    restart: always
+  pips:
+    build: pips/
+    ports:
+      - "4242:4242"
+    restart: always
+  stupid-rope:
+    build: stupid-rope/
+    ports:
+      - "4243:22"
+    restart: always
