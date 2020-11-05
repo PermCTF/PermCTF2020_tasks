@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nginx:
+    build: .
+    container_name: web_kid
+    ports:
+      - 127.0.0.1:4429:80
+    volumes:
+      - ./html:/var/www/html
