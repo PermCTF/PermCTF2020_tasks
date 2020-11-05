@@ -11,4 +11,4 @@
 5. http://keyserver.ubuntu.com/pks/lookup?search=nosowoh594%40ptcji.com&fingerprint=on&op=index
 
 ## Флаг 
-PermCTF{crystal_view_security
+PermCTF{crystal_view_security}
