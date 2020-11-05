@@ -4,7 +4,7 @@ No-echo -> Control.
 # Файлы
 * chall                         # папка с файлами для таска;
 * Dockerfile                    # Docker stuff;
-* solve.py & build.sh           # скрипт-эксплойт;
+* solve.py                      # скрипт-эксплойт;
 * main.c                        # исходник "сервиса";
 * makefile                      # Make stuff;
 
