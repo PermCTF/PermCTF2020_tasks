@@ -20,6 +20,8 @@ void cat_flag(){
     FILE* flag_p = fopen("flag", "r");
     fgets(flag, 30, flag_p);
     printf("%s\n", flag);
+    fflush(stdout);
+    exit(0);
 }
 
 void clear_screen(int tm){

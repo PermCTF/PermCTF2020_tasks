@@ -5,9 +5,8 @@ COPY ./chall /chall
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timez
 RUN apt-get update
-RUN apt-get install -y ncat
+RUN apt-get install -y ncat python
 RUN chmod +x /chall/echo-control
-RUN chmod +r /chall/flag
 RUN adduser winner
 
 WORKDIR /chall
