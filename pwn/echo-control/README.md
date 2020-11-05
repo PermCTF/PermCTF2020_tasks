@@ -1,5 +1,5 @@
 # Описание
-I like your nickname.
+No-echo -> Control.
 
 # Файлы
 * chall                         # папка с файлами для таска;
@@ -17,7 +17,7 @@ I like your nickname.
 Участникам доступны бинарный файл для анализа + удаленный доступ (telnet)
 
 # Решение
-Смотрите solve.py.
+Смотрите solve.sh
 
 # Флаг
 PermCTF{FMT2c0de_red1recti0n}
