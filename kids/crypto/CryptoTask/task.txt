@@ -1,2 +1,0 @@
-PermCTF{f1rst_crypt0_task}
-
