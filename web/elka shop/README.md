@@ -9,4 +9,4 @@
 2. Находим флаг
 
 ## Флаг:
-    PermCTF{you_know_for_search}
+PermCTF{you_know_for_search}

@@ -1,8 +1,9 @@
 version: '3.3'
+
 services:
+
   elka:
     build: .
-    container_name: elka_container
     environment:
       - node.name=elo4ka
       - cluster.name=elo4ka-cluster
@@ -10,3 +11,12 @@ services:
       - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
     ports:
       - 127.0.0.1:9200:9200
+
+  init:
+    build: .
+    environment:
+      ELK_HOST: elka
+      ELK_PORT: 9200
+    command: /start.sh
+
+

@@ -1,0 +1,37 @@
+== Info:   Trying ::1:9200...
+== Info: connect to ::1 port 9200 failed: Connection refused
+== Info:   Trying 127.0.0.1:9200...
+== Info: Connected to localhost (127.0.0.1) port 9200 (#0)
+=> Send header, 141 bytes (0x8d)
+0000: PUT /elka/post/3 HTTP/1.1
+001b: Host: localhost:9200
+0031: User-Agent: curl/7.73.0
+004a: Accept: */*
+0057: Content-Type: application/json
+0077: Content-Length: 74
+008b: 
+=> Send data, 74 bytes (0x4a)
+0000: {"type":".......... ........................","count":"123","pri
+0040: ce":"600"}
+== Info: upload completely sent off: 74 out of 74 bytes
+== Info: Mark bundle as not supporting multiuse
+<= Recv header, 22 bytes (0x16)
+0000: HTTP/1.1 201 Created
+<= Recv header, 24 bytes (0x18)
+0000: Location: /elka/post/3
+<= Recv header, 250 bytes (0xfa)
+0000: Warning: 299 Elasticsearch-7.9.2-d34da0ea4a966c4e49417f2da2f244e
+0040: 3e97b4e6e "[types removal] Specifying types in document index re
+0080: quests is deprecated, use the typeless endpoints instead (/{inde
+00c0: x}/_doc/{id}, /{index}/_doc, or /{index}/_create/{id})."
+<= Recv header, 47 bytes (0x2f)
+0000: content-type: application/json; charset=UTF-8
+<= Recv header, 21 bytes (0x15)
+0000: content-length: 152
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 152 bytes (0x98)
+0000: {"_index":"elka","_type":"post","_id":"3","_version":1,"result":
+0040: "created","_shards":{"total":2,"successful":1,"failed":0},"_seq_
+0080: no":3,"_primary_term":1}
+== Info: Connection #0 to host localhost left intact
