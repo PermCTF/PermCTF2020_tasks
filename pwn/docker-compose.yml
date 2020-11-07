@@ -20,7 +20,7 @@ services:
     ports:
       - "4243:22"
     restart: always
-    echo-control:
+  echo-control:
       build: echo-control/
       ports:
         - "6661:6661"
