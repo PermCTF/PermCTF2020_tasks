@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    Твои посты
+</h1>
+{% for post in posts %}
+    <article class="post">
+      <header>
+        <div>
+          <h2>{{ post['name'] }}</h1>
+					<img src="{{url_for('static', filename=post['image'])}}" align="middle" />
+          <div class="about">by {{ post['author_name'] }} </div>
+        </div>
+      </header>
+    </article>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

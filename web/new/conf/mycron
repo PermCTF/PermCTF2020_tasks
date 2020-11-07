@@ -1,0 +1,1 @@
+*/1 * * * * cd /app && /usr/local/bin/python3 clear.py
