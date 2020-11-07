@@ -13,7 +13,7 @@ users[0]["posts"] = [{"name":"Солнышко","image":"1.jpg"},
 users[1]["posts"] = [{"name":"Тимофей","image":"3.jpg"},
         {"name":"Михаил","image":"4.jpg"},]
 
-paths = ["index.html","login.html","dobavitkota.html","PermCTF{Gr4phQL}"]
+paths = ["index","login","dobavitkota","PermCTF{Gr4phQL}"]
 for user in users:
     new_user = User(email=user["email"], name=user["name"],
                     password=generate_password_hash(user["password"], method='sha256'))
