@@ -8,7 +8,7 @@ create_index() {
     echo "create index $name at $ELK_HOST:$ELK_PORT" >&2
     curl -X PUT "$ELK_HOST:$ELK_PORT/${name}/post/1" -vfs \
     -H 'Content-Type: application/json' \
-     -d '{"type":"Сосна обыкновенная","count":"123","price":"600"}'
+     -d '{"type":"Ель обыкновенная","count":"123","price":"600"}'
 }
 
 create_flag() {
