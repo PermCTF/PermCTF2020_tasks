@@ -1,4 +1,0 @@
-#!/bin/bash
-# This is a comment
-
-docker run -p 8081:80 -v ${PWD}/505.html:/var/www/errors/505.html  -v ${PWD}/default.conf:/etc/nginx/sites-enabled/default.conf -v ${PWD}/html/:/var/www/html/:ro  richarvey/nginx-php-fpm
