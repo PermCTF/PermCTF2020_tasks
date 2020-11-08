@@ -120,8 +120,8 @@ def hello_world():
 
 
 # /graphql-query
-app.add_url_rule('/graphql-query', view_func=GraphQLView.as_view(
-    'graphql-query',
+app.add_url_rule('/graphql', view_func=GraphQLView.as_view(
+    'graphql',
     schema=schema_query, graphiql=True
 ))
 

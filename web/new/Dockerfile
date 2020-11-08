@@ -13,7 +13,7 @@ RUN chmod +x /app/run.sh
 RUN useradd --no-create-home nginx
 
 RUN chown -R nginx: /app/*
-
+RUN chmod +r /app/flag
 RUN mkdir /etc/nginx/certs
 COPY conf/certs /etc/nginx/certs
 RUN rm -r /root/.cache
